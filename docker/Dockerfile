@@ -4,7 +4,7 @@ LABEL AUTHOR="none" \
 
 ENV DEFAULT_LIST_FILE=crontab_list.sh \
         CUSTOM_LIST_MERGE_TYPE=append \
-        REPO_URL=https://gitee.com/lxk0301/jd_scripts.git
+        REPO_URL=https://github.com/SuperCatss/scripts.git
 
 RUN set -ex \
         && apk update && apk upgrade\
@@ -14,7 +14,7 @@ RUN set -ex \
 
 RUN git clone ${REPO_URL} /scripts \
         && cd /scripts \
-        && git checkout master \
+        && git checkout ca \
         && mkdir logs \
         && npm install
 
