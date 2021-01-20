@@ -1,0 +1,2 @@
+docker/Dockerfile merge=ours
+docker/default_task.sh merge=ours
