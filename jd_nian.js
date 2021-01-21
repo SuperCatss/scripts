@@ -9,11 +9,7 @@
 ============Quantumultx===============
 [task_local]
 #京东炸年兽🧨
-<<<<<<< HEAD
-0 8 * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, tag=京东炸年兽🧨, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/lxk0301/jd_nian.png, enabled=true
-=======
 10 * * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, tag=京东炸年兽🧨, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/lxk0301/jd_nian.png, enabled=true
->>>>>>> f447c6c17a2fc91a0637982420766686f254ece4
 
 ================Loon==============
 [Script]
