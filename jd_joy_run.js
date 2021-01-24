@@ -44,7 +44,10 @@ let invite_pins = [];
 let run_pins = [];
 // $.LKYLToken = '76fe7794c475c18711e3b47185f114b5' || $.getdata('jdJoyRunToken');
 // $.LKYLToken = $.getdata('jdJoyRunToken');
-const friendsArr = [];
+const friendsArr = [
+  "",
+  ""
+];
 
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';

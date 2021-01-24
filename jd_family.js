@@ -10,9 +10,6 @@
 8000幸福值可换100京豆，一天任务做完大概300幸福值，周期较长
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
-[task_local]
-#京东家庭号
-1 * * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_family.js, tag=京东家庭号, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_family.png, enabled=true
 =======
 
 易黑号，建议禁用
