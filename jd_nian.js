@@ -2,13 +2,14 @@
 京东炸年兽🧨
 活动时间:2021-1-18至2021-2-11
 暂不加入品牌会员
-活动入口:https://wbbny.m.jd.com/babelDiy/Zeus/2cKMj86srRdhgWcKonfExzK4ZMBy/index.html
-活动地址：京东app左侧浮动窗口
+地址 https://wbbny.m.jd.com/babelDiy/Zeus/2cKMj86srRdhgWcKonfExzK4ZMBy/index.html
+活动入口：京东app首页浮动窗口
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #京东炸年兽🧨
+<<<<<<< HEAD
 [Script]
 cron "10 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js,tag=京东炸年兽🧨
 
@@ -29,6 +30,19 @@ cron "0 9,12,20 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_
 
 ============小火箭=========
 京东炸年兽🧨 = type=cron,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, cronexpr="0 9,12,20 * * *", timeout=3600, enable=true
+=======
+0 9,12,20,21 * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, tag=京东炸年兽🧨, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/lxk0301/jd_nian.png, enabled=true
+
+================Loon==============
+[Script]
+cron "0 9,12,20,21 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js,tag=京东炸年兽🧨
+
+===============Surge=================
+京东炸年兽🧨 = type=cron,cronexp="0 9,12,20,21 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js
+
+============小火箭=========
+京东炸年兽🧨 = type=cron,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, cronexpr="0 9,12,20,21 * * *", timeout=3600, enable=true
+>>>>>>> 18e384c58c35e374ef1edfc2207db7718264c53a
  */
 const $ = new Env('京东炸年兽🧨');
 
@@ -59,8 +73,8 @@ const inviteCodes = [
   ''
 ];
 const pkInviteCodes = [
-  'IgNWdiLGaPadvlqJQnnKp27-YpAvKvSYNTSkTGvZylf_0wcvqD9EMkohEdw@IgNWdiLGaPaZskfACQyhgLSpZWps-WtQEW3McifW@IgNWdiLGaPYCeJUfsq18UNi5ln9xEZSPRdOue8Wl3hJTS2SQzU0vulL0fHeULJaIfgqHFd7f_Kg',
-  'IgNWdiLGaPadvlqJQnnKp27-YpAvKvSYNTSkTGvZylf_0wcvqD9EMkohEdw@IgNWdiLGaPaAvmHPAQf769XqjJjMyRirPzN9-AS-WHY9Y_G7t9Cwe5gdiI2qEvHa@IgNWdiLGaPYCeJUfsq18UNi5ln9xEZSPRdOue8Wl3hLRjZBAJLHzBpcl18AeskNYctp-8Q@IgNWdiLGaPYCeJUfsq18UNi5ln9xEZSPRdOue8Wl3hLRjZBCduDyApZxg5BPuhRfnJvQvQ'
+  'IgNWdiLGaPadvlqJQnnKp27-YpAvKvSYNTSkTGvZylf_0wcvqD9EMkohEd0@IgNWdiLGaPaZskfACQyhgLSpZWps-WtQEW3McifX@IgNWdiLGaPaAvmHPAQf769XqjJjMyRirPzN9-AS-WHY9Y_G7t9Cwe5gdiI2qEvHb@IgNWdiLGaPYCeJUfsq18UNi5ln9xEZSPRdOue8Wl3hJTS2SQzU0vulL0fHeULJaIfgqHFd7f_Kk@IgNWdiLGaPYCeJUfsq18UNi5ln9xEZSPRdOue8Wl3hLRjZBAJLHzBpcl18AeskNYctp-8A',
+  'IgNWdiLGaPadvlqJQnnKp27-YpAvKvSYNTSkTGvZylf_0wcvqD9EMkohEd0@IgNWdiLGaPaZskfACQyhgLSpZWps-WtQEW3McifX@IgNWdiLGaPaAvmHPAQf769XqjJjMyRirPzN9-AS-WHY9Y_G7t9Cwe5gdiI2qEvHb@IgNWdiLGaPYCeJUfsq18UNi5ln9xEZSPRdOue8Wl3hJTS2SQzU0vulL0fHeULJaIfgqHFd7f_Kk@IgNWdiLGaPYCeJUfsq18UNi5ln9xEZSPRdOue8Wl3hLRjZBAJLHzBpcl18AeskNYctp-8A'
 ]
 !(async () => {
   await requireConfig();
@@ -127,7 +141,7 @@ async function jdNian() {
     await $.wait(1000)
     await doTask()
     await $.wait(2000)
-    await helpFriends()
+    // await helpFriends()
     await $.wait(2000)
     await getHomeData(true)
     await showMsg()
@@ -247,25 +261,6 @@ async function doTask() {
           await $.wait(3000)
         }
       } else if (item.status === 2) {
-        console.log(`${item.taskName}已做完`)
-      }
-    }else if (item.taskType === 13) {
-      if (item.status === 1) {
-        console.log(`准备做此任务：${item.taskName}`)
-        await collectScore(item.taskId, "1");
-      } else if(item.status===2){
-        console.log(`${item.taskName}已做完`)
-      }
-    } else if (item.taskType === 21) {
-      if (item.status === 1) {
-        console.log(`准备做此任务：${item.taskName}`)
-        for (let task of item.brandMemberVos) {
-          if (task.status === 1) {
-            await collectScore(item.taskId, task.itemId);
-          }
-          await $.wait(3000)
-        }
-      } else if(item.status===2){
         console.log(`${item.taskName}已做完`)
       }
     }
@@ -529,6 +524,7 @@ function pkCollectScore(taskId, itemId, actionType = null, inviteId = null, shop
     })
   })
 }
+
 function doTask2(taskToken) {
   let body = {
     "dataSource": "newshortAward",
@@ -1104,7 +1100,7 @@ function readShareCodePk() {
   console.log(`开始`)
   return new Promise(async resolve => {
     $.get({
-      url: `http://jd.turinglabs.net/api/v2/jd/nian_pk/read/${randomCount}/`,
+      url: `http://jd.turinglabs.net/api/v2/jd/nian/read/${randomCount}/`,
       'timeout': 10000
     }, (err, resp, data) => {
       try {
@@ -1160,7 +1156,9 @@ function shareCodesFormatPk() {
       const tempIndex = $.index > pkInviteCodes.length ? (pkInviteCodes.length - 1) : ($.index - 1);
       $.newShareCodesPk = pkInviteCodes[tempIndex].split('@');
     }
-    const readShareCodeRes = null //await readShareCodePk();
+    let readShareCodeRes = null
+    if (new Date().getUTCHours() >= 12)
+      readShareCodeRes = await readShareCodePk();
     if (readShareCodeRes && readShareCodeRes.code === 200) {
       $.newShareCodesPk = [...new Set([...$.newShareCodesPk, ...(readShareCodeRes.data || [])])];
     }
