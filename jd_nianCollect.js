@@ -8,10 +8,6 @@
 ============Quantumultx===============
 [task_local]
 #京东炸年兽🧨
-<<<<<<< HEAD
-50 * * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js, tag=京东收🧨, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/lxk0301/jd_nianCollect.png, enabled=true
-
-================Loon==============
 [Script]
 cron "50 * * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js,tag=京东收🧨
 
@@ -32,7 +28,6 @@ cron "50 * * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd
 
 ============小火箭=========
 京东收🧨 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nianCollect.js, cronexpr="50 * * * *", timeout=3600, enable=true
->>>>>>> 4a31ce25c61817b62be0b37a5eeef4b55c67540b
  */
 const $ = new Env('京东炸年兽领爆竹🧨');
 //Node.js用户请在jdCookie.js处填写京东ck;

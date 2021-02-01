@@ -13,11 +13,7 @@
 ===============Quantumultx===============
 [task_local]
 #点点券
-<<<<<<< HEAD
-10 0,20 * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_necklace.js, tag=点点券, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
-=======
 10 0,20 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_necklace.js, tag=点点券, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
->>>>>>> 4a31ce25c61817b62be0b37a5eeef4b55c67540b
 
 ================Loon==============
 [Script]
