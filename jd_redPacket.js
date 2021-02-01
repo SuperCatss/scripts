@@ -19,6 +19,7 @@
 ================QuantumultX==================
 [task_local]
 #京东全民开红包
+<<<<<<< HEAD
 1 1 * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_redPacket.js, tag=京东全民开红包, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true
 ===================Loon==============
 [Script]
@@ -26,6 +27,15 @@ cron "1 1 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_script
 ===============Surge===============
 [Script]
 京东全民开红包 = type=cron,cronexp=1 1 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_redPacket.js
+=======
+1 1 * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_redPacket.js, tag=京东全民开红包, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true
+===================Loon==============
+[Script]
+cron "1 1 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_redPacket.js, tag=京东全民开红包
+===============Surge===============
+[Script]
+京东全民开红包 = type=cron,cronexp=1 1 * * *,wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_redPacket.js
+>>>>>>> 4a31ce25c61817b62be0b37a5eeef4b55c67540b
  */
 const $ = new Env('京东全民开红包');
 const notify = $.isNode() ? require('./sendNotify') : '';
