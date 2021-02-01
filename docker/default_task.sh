@@ -86,11 +86,7 @@ fi
 
 
 
-<<<<<<< HEAD
-echo "第6步删除不运行的脚本任务..."
-=======
 echo "第5步删除不运行的脚本任务..."
->>>>>>> 4a31ce25c61817b62be0b37a5eeef4b55c67540b
 if [ $DO_NOT_RUN_SCRIPTS ]; then
     echo "您配置了不运行的脚本：$DO_NOT_RUN_SCRIPTS"
     arr=${DO_NOT_RUN_SCRIPTS//&/ }
@@ -101,8 +97,6 @@ if [ $DO_NOT_RUN_SCRIPTS ]; then
 fi
 
 
-<<<<<<< HEAD
-=======
 echo "第6步设定下次运行docker_entrypoint.sh时间..."
 echo "删除原有docker_entrypoint.sh任务"
 sed -ie '/'docker_entrypoint.sh'/d' ${mergedListFile}
@@ -131,7 +125,6 @@ echo ""${random_min}" */"${random_h}" * * * docker_entrypoint.sh >> /scripts/log
 
 
 
->>>>>>> 4a31ce25c61817b62be0b37a5eeef4b55c67540b
 
 echo "第7步增加 |ts 任务日志输出时间戳..."
 sed -i "/\( ts\| |ts\|| ts\)/!s/>>/\|ts >>/g" $mergedListFile
